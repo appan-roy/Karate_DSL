@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.tests.gorest.ReadPayloadFromJsonFile</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-04-23 09:18:20 AM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:9]"><span>[1:9]</span> <span>Create a user with given data</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/tests/gorest/ReadPayloadFromJsonFile.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">POST Call - GoREST</span>
+          <span class="feature-description">This is to test POST call in GoREST</span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:9]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:9]</span>
+                <span class="scenario-name">Create a user with given data</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>101</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:9]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">09:18:20.283 The value of env is:  qa 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#* def reqPayload = read(&#39;classpath:src/test/resources/payload/user.json&#39;)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def reqPayload = read(&#39;classpath:src\test\resources\payload\user.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">96</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">09:18:20.570 src/test/java/tests/gorest/ReadPayloadFromJsonFile.feature:7
+* def reqPayload = read(&#39;classpath:src\test\resources\payload\user.json&#39;)
+js failed:
+&gt;&gt;&gt;&gt;
+01: read(&#39;classpath:src\test\resources\payload\user.json&#39;)
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:44 Invalid hex digit
+read(&#39;classpath:src\test\resources\payload\user.json&#39;)
+                                            ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2205)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2124)
+- com.intuit.karate.core.ScenarioEngine.evalAndCastTo(ScenarioEngine.java:1316)
+
+src/test/java/tests/gorest/ReadPayloadFromJsonFile.feature:7
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref skipped">10</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>path &#39;/public/v1/users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref skipped">11</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39;+goRestAuthToken</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref skipped">12</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>request reqPayload</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref skipped">13</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref skipped">14</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref skipped">15</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref skipped">16</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match $.data.id == &#39;#present&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref skipped">17</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match $.data.name == &#39;#present&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref skipped">18</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match $.data.email == &#39;tom25@rhyta.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

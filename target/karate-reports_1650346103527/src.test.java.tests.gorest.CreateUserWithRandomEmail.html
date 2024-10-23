@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.tests.gorest.CreateUserWithRandomEmail</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-04-19 10:54:19 AM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:29]"><span>[1:29]</span> <span>Create a user with given data</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/tests/gorest/CreateUserWithRandomEmail.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Create User with Random Email</span>
+          <span class="feature-description">This is to test POST call in GoREST</span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:29]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:29]</span>
+                <span class="scenario-name">Create a user with given data</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>7630</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:29]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:29]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">10:54:11.878 The value of env is:  qa 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:29]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def generateRandomString =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">94</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.6">function(s){
+	var text = &quot;&quot;
+	var pattern = &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz&quot;
+	for(var i = 0; i &lt; s; i++)
+		text += pattern.charAt(Math.floor(Math.random() * pattern.length()))
+	return text
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:29]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomString = generateRandomString(10)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">184</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:29]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print randomString</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.17">10:54:12.351 [print] tYldJIoFuU 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:29]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref bg-step">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def reqPayload =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">283</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.18">{
+&quot;name&quot;: &quot;tom&quot;,
+&quot;gender&quot;: &quot;male&quot;,
+&quot;status&quot;: &quot;active&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:29]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref bg-step">26</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>reqPayload.email = randomString + &#39;@rhyta.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">27</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:29]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref bg-step">27</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print reqPayload</span>
+      </div>
+    </div>
+    <div class="time-cell passed">24</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.27">10:54:12.677 [print] {
+  &quot;name&quot;: &quot;tom&quot;,
+  &quot;gender&quot;: &quot;male&quot;,
+  &quot;status&quot;: &quot;active&quot;,
+  &quot;email&quot;: &quot;tYldJIoFuU@rhyta.com&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/public/v1/users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39;+goRestAuthToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request reqPayload</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6953</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.33">10:54:15.867 request:
+1 &gt; POST https://gorest.co.in/public/v1/users
+1 &gt; Authorization: Bearer 89cf87f16f772073ba400974a844aaf551e4086be18a9171e59be21ffa1b662a
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 79
+1 &gt; Host: gorest.co.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_181)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;tom&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;active&quot;,&quot;email&quot;:&quot;tYldJIoFuU@rhyta.com&quot;}
+
+10:54:19.644 response time in milliseconds: 3777
+1 &lt; 201
+1 &lt; Server: nginx
+1 &lt; Date: Tue, 19 Apr 2022 05:24:20 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-XSS-Protection: 0
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; X-RateLimit-Limit: 90
+1 &lt; X-RateLimit-Remaining: 89
+1 &lt; X-RateLimit-Reset: 1
+1 &lt; Location: https://gorest.co.in/public/v1/users/4239
+1 &lt; ETag: W/&quot;c4fe2e24c6e22513cdbe9866172d883a&quot;
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; X-Request-Id: dff34c05-12bd-44be-b888-6b58e7039c20
+1 &lt; X-Runtime: 0.024812
+1 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 &lt; Vary: Origin
+{&quot;meta&quot;:null,&quot;data&quot;:{&quot;id&quot;:4239,&quot;name&quot;:&quot;tom&quot;,&quot;email&quot;:&quot;tYldJIoFuU@rhyta.com&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;active&quot;}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.35">10:54:19.660 [print] {
+  &quot;meta&quot;: null,
+  &quot;data&quot;: {
+    &quot;id&quot;: 4239,
+    &quot;name&quot;: &quot;tom&quot;,
+    &quot;email&quot;: &quot;tYldJIoFuU@rhyta.com&quot;,
+    &quot;gender&quot;: &quot;male&quot;,
+    &quot;status&quot;: &quot;active&quot;
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.data.id == &#39;#present&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">34</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.data.name == &#39;#present&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.data.email == reqPayload.email</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

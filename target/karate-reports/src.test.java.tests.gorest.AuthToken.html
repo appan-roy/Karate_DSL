@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.tests.gorest.AuthToken</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-04-23 09:33:11 AM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:5]"><span>[1:5]</span> <span>GET Call - Pass auth token in request headers</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/tests/gorest/AuthToken.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Pass auth token in request headers</span>
+          <span class="feature-description">This is to test GET calls with auth token</span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:5]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:5]</span>
+                <span class="scenario-name">GET Call - Pass auth token in request headers</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>7768</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>header Authorization = &#39;Bearer &#39;+goRestAuthToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">37</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">09:33:03.162 The value of env is:  qa 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>url baseUrl+&#39;/public/v1/users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;30&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7688</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">09:33:06.429 request:
+1 &gt; GET https://gorest.co.in/public/v1/users/30
+1 &gt; Authorization: Bearer 89cf87f16f772073ba400974a844aaf551e4086be18a9171e59be21ffa1b662a
+1 &gt; Host: gorest.co.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_181)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+09:33:10.958 response time in milliseconds: 4520
+1 &lt; 200
+1 &lt; Server: nginx
+1 &lt; Date: Sat, 23 Apr 2022 04:03:14 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Accept-Encoding
+1 &lt; Vary: Origin
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-XSS-Protection: 0
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; X-RateLimit-Limit: 90
+1 &lt; X-RateLimit-Remaining: 89
+1 &lt; X-RateLimit-Reset: 1
+1 &lt; ETag: W/&quot;f93ff650616a52af57883757a833952a&quot;
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; X-Request-Id: 512826e7-5a73-42ca-94c0-242b782a7b5d
+1 &lt; X-Runtime: 0.017338
+1 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
+{&quot;meta&quot;:null,&quot;data&quot;:{&quot;id&quot;:30,&quot;name&quot;:&quot;Dr. Rajan Kakkar&quot;,&quot;email&quot;:&quot;dr_rajan_kakkar@schmitt-beatty.info&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;inactive&quot;}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">38</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">09:33:11.113 [print] {
+  &quot;meta&quot;: null,
+  &quot;data&quot;: {
+    &quot;id&quot;: 30,
+    &quot;name&quot;: &quot;Dr. Rajan Kakkar&quot;,
+    &quot;email&quot;: &quot;dr_rajan_kakkar@schmitt-beatty.info&quot;,
+    &quot;gender&quot;: &quot;female&quot;,
+    &quot;status&quot;: &quot;inactive&quot;
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
